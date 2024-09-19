@@ -28,7 +28,7 @@ function processAction(action: paymentAction) {
 }
 
 
-function isString(x: string | number): boolean {
+function isString1(x: string | number): boolean {
   if (typeof x === 'string') {
     return true;
   } else if (typeof x === 'number') {

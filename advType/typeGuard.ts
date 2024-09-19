@@ -16,7 +16,7 @@ interface Admin1 {
   role: number;
 }
 
-function logId(id: string | number) {
+function logId2(id: string | number) {
   if (isString(id)) {
     console.log(id);
   } else {
