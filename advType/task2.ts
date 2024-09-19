@@ -1,4 +1,4 @@
-interface IPayment {
+interface IPayment1 {
   sum: number;
   from: number;
   to: number;
@@ -9,31 +9,31 @@ enum PaymentStatus1 {
   Failed = 'failed',
 }
 
-interface IPaymentRequest extends IPayment {
+interface IPaymentRequest1 extends IPayment1 {
 }
 
-interface IDataSuccess extends IPayment {
+interface IDataSuccess1 extends IPayment1 {
   databaseId: number;
 }
 
-interface IDataFailed {
+interface IDataFailed1 {
   errorMessage: string;
   errorCode: number;
 }
 
-interface IResponseSuccess {
-  status: PaymentStatus1.Success;
-  data: IDataSuccess;
+interface IResponseSuccess1 {
+  status: PaymentStatus1.Success,
+  data: IDataSuccess,
 }
 
-interface IResponseFailed {
-  status: PaymentStatus1.Failed;
-  data: IDataFailed;
+interface IResponseFailed1 {
+  status: PaymentStatus1.Failed,
+  data: IDataFailed,
 }
 
-type Res = IResponseSuccess | IResponseFailed;
+type Res = IResponseSuccess1 | IResponseFailed1;
 
-function isSuccess(resp: Res): resp is IResponseSuccess {
+function isSuccess(resp: Res): resp is IResponseSuccess1 {
   return resp.status === PaymentStatus1.Success;
 }
 
