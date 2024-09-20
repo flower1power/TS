@@ -9,8 +9,7 @@ enum PaymentStatus1 {
   Failed = 'failed',
 }
 
-interface IPaymentRequest1 extends IPayment1 {
-}
+interface IPaymentRequest1 extends IPayment1 {}
 
 interface IDataSuccess1 extends IPayment1 {
   databaseId: number;
@@ -22,13 +21,13 @@ interface IDataFailed1 {
 }
 
 interface IResponseSuccess1 {
-  status: PaymentStatus1.Success,
-  data: IDataSuccess,
+  status: PaymentStatus1.Success;
+  data: IDataSuccess;
 }
 
 interface IResponseFailed1 {
-  status: PaymentStatus1.Failed,
-  data: IDataFailed,
+  status: PaymentStatus1.Failed;
+  data: IDataFailed;
 }
 
 type Res = IResponseSuccess1 | IResponseFailed1;

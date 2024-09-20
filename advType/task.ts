@@ -74,34 +74,33 @@
 //! школа
 
 interface IPayment {
-    sum: number,
-    from: number,
-    to: number
+  sum: number;
+  from: number;
+  to: number;
 }
 
 const enum PaymentStatus {
-    Success = 'success',
-    Failed = 'failed'
+  Success = 'success',
+  Failed = 'failed',
 }
 
-interface IPaymentRequest extends IPayment {
-}
+interface IPaymentRequest extends IPayment {}
 
 interface IDataSuccess extends IPayment {
-    databaseId: number,
+  databaseId: number;
 }
 
 interface IDataFailed {
-    errorMessage: string,
-    errorCode: number
+  errorMessage: string;
+  errorCode: number;
 }
 
 interface IResponseSuccess {
-    status: PaymentStatus.Success,
-    data: IDataSuccess,
+  status: PaymentStatus.Success;
+  data: IDataSuccess;
 }
 
 interface IResponseFailed {
-    status: PaymentStatus.Failed,
-    data: IDataFailed,
+  status: PaymentStatus.Failed;
+  data: IDataFailed;
 }

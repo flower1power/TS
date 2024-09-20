@@ -10,7 +10,6 @@ const user12: User12 = {
   login: 'john123',
 };
 
-
 interface Admin1 {
   name: string;
   role: number;
@@ -27,7 +26,6 @@ function logId2(id: string | number) {
 function isString(x: string | number): x is string {
   return typeof x === 'string';
 }
-
 
 function setRoleZero(user: User12 | Admin1) {
   if (isAdmin(user)) {

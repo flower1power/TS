@@ -4,15 +4,14 @@ function generateError(msg: string): never {
 }
 
 function dumpError(): never {
-  while (true) {
-  }
+  while (true) {}
 }
 
 function rec(): never {
   return rec();
 }
 
-type paymentAction = 'refund' | 'checkout' | 'reject'
+type paymentAction = 'refund' | 'checkout' | 'reject';
 
 function processAction(action: paymentAction) {
   switch (action) {
@@ -26,7 +25,6 @@ function processAction(action: paymentAction) {
       throw new Error('Нет такого action');
   }
 }
-
 
 function isString1(x: string | number): boolean {
   if (typeof x === 'string') {

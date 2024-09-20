@@ -37,7 +37,7 @@ async function getDataForce() {
 }
 
 // любой юнион с unknown - всегда unknown
-type U1 = unknown | null
+type U1 = unknown | null;
 
 // любой интерсекшен с unknown - сужение = string
-type I1 = unknown & string
+type I1 = unknown & string;

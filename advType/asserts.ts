@@ -15,7 +15,7 @@ function assertUser(obj: unknown): asserts obj is User13 {
 assertUser(user13);
 user13.name = 'Vik';
 
-type Payment = number | { sum: number }
+type Payment = number | { sum: number };
 
-// let payment: Payment = 10;
-payment = {sum: 10};
+let payment: Payment = 10;
+payment = { sum: 10 };

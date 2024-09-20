@@ -22,7 +22,6 @@ const user11: User11 = {
 // as User11
 // <User11> - нельзя в React
 
-
 interface Admin {
   name: string;
   role: number;
@@ -32,7 +31,7 @@ interface Admin {
 // но сохранили поля из User11 - что не надо
 const admin: Admin = {
   ...user11,
-  role: 1
+  role: 1,
 };
 
 //! верный вариант - создать функцию маппинга

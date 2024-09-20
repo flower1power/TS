@@ -1,23 +1,22 @@
 interface User3 {
-    name: string;
+  name: string;
 }
 
 // если название одно - соединяется
 // type будет ругаться
 interface User3 {
-    age: number;
+  age: number;
 }
 
 const user6: User3 = {
-    name: "LC",
-    age: 33,
+  name: 'LC',
+  age: 33,
 };
-
 
 type ID = string | number;
 
 interface IDI {
-    ID: string | number;
+  ID: string | number;
 }
 
 // type для примитивов

@@ -18,11 +18,10 @@ function multiply1(first: number, second?: number): number {
 multiply(5);
 multiply(5, 5);
 
-
 interface UserPro {
   login: string;
   password?: {
-    type: 'primary' | 'secondary'
+    type: 'primary' | 'secondary';
   };
 }
 

@@ -21,7 +21,7 @@ function getUser() {
     return null;
   } else {
     return {
-      name: 'Viktor'
+      name: 'Viktor',
     } as User10;
   }
 }
