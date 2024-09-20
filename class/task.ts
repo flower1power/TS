@@ -19,9 +19,9 @@ user19.addSkill('QA');
 console.log(user19);
 user19.addSkill(['DEV', 'DevOps']);
 
-function run(distance: string): string;
-function run(distance: number): number;
-function run(distance: number | string): string | number {
+function run1(distance: string): string;
+function run1(distance: number): number;
+function run1(distance: number | string): string | number {
   if (typeof distance === 'string') {
     return '';
   } else {
