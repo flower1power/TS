@@ -6,6 +6,7 @@ class UserService {
     return UserService.db.find(id);
   }
 
+  // @ts-ignore
   constructor(id: number) {
 
   }

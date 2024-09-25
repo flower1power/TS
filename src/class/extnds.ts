@@ -45,6 +45,7 @@ class User22 {
 }
 
 class Admin2 extends User22 {
+  // @ts-ignore
   name: string = 'Admin';
 
   constructor() {

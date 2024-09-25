@@ -16,7 +16,7 @@ const res2 = {
 if (res2.statusCode === StatusCode.SUCCESS) {
 }
 
-function action(status: StatusCode) {
+function action(_status: StatusCode) {
   return;
 }
 
