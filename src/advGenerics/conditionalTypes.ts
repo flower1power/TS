@@ -25,9 +25,9 @@ class UserPersistend extends User25 {
   dbId: string;
 }
 
-function getUser(Id: number): User25;
-function getUser(dbId: string): UserPersistend;
-function getUser(dbIdOrId: string | number): User25 | UserPersistend {
+function getUser1(Id: number): User25;
+function getUser1(dbId: string): UserPersistend;
+function getUser1(dbIdOrId: string | number): User25 | UserPersistend {
   if (typeof dbIdOrId === 'number') {
     return new User25();
   } else {

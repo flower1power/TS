@@ -17,7 +17,7 @@ function run(i: unknown) {
 
 run(input);
 
-async function getData() {
+async function getData3() {
   try {
     await fetch('');
   } catch (error) {
