@@ -2,3 +2,4 @@
 /.idea/
 *.js 
 .DS_Store
+src/decorator/decTS5.ts
